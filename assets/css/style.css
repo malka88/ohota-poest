@@ -148,10 +148,11 @@ input::-webkit-search-results-decoration { display: none; }
     margin-right: 1.5rem;
     display: block;
     position: relative;
+    text-decoration: none;
 }
 
 .nav__item::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
