@@ -1,0 +1,147 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&family=Rubik:wght@400;700&display=swap');
+
+/* VARIABLES CSS */
+:root{
+    --header-height: 5rem;
+
+    /* Colors */
+    --body-color: #FCF2EE;
+    --text-color: #000000;
+    --light-text-color: #FFFFFF;
+    --highlighter-color: #FF4A1C;
+    --contour-color: #89B6A5;
+
+    /* Typography */
+    --title-font: 'Jura', sans-serif;
+    --body-font: 'Rubik', sans-serif;
+    --h1-font-size: 3rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --logo-size: 2rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+
+    /* Font weight */
+    --font-bold: 700;
+
+    /* Z-index */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+
+/* Responsive typography */
+@media screen and (min-width: 1200px) {
+    :root{
+        --h1-font-size: 4rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --logo-size: 2rem;
+        --normal-font-size: 1.125rem;
+        --small-font-size: 0.875rem;
+    }
+}
+
+
+/* BASE */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body,
+button,
+textarea{
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+body{
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main{
+    padding-top: 5rem;
+}
+
+section{
+    position: relative;
+}
+
+h1{
+    font-weight: var(--font-bold);
+    font-size: var(--h1-font-size);
+}
+
+h2{
+    font-weight: var(--font-bold);
+    font-size: var(--h2-font-size);
+}
+
+h3{
+    font-weight: var(--font-bold);
+    font-size: var(--h3-font-size);
+}
+
+p{
+    font-size: var(--normal-font-size);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+}
+  
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+input{
+    font-size: var(--small-font-size);
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration { display: none; }
+
+::selection {
+    background: var(--highlighter-color); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+    background: var(--highlighter-color); /* Gecko Browsers */
+}
+
+/* REUSABLE CSS CLASSES */
+.main{
+    overflow: hidden;
+}
+
+.section_title{
+    text-align: center;
+    font-size: var(--h2-font-size);
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}

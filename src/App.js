@@ -1,12 +1,14 @@
 import React from 'react';
 
-import { Footer, Header } from './containers';
-import { Navbar } from './components';
+import { About, Recipes, Recipe } from './containers';
+import { Header, Footer } from './components';
 
-const App = () => {
-  return (
-    <div></div>
-  )
-}
+import './App.css';
 
-export default App
+const App = () => (
+    <div className="App">
+      <Header />
+    </div>
+);
+
+export default App;

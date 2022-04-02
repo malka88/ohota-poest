@@ -1,7 +1,4 @@
-
-
-/* HEADER & NAV */
-header{
+.header{
     position: fixed;
     top: 0;
     width: 100%;
@@ -111,62 +108,4 @@ header{
 {
     width: 1.563rem;
     height: 1.563rem;
-}
-
-/* WELCOME */
-.welcome{
-    padding-left: 5.625rem;
-    padding-right: 5.625rem;
-    height:calc(100vh - 5rem);
-    
-}
-
-.welcome__container{
-    display: grid;
-    padding-top: 2rem;
-    grid-template-columns: repeat(2,1fr);
-    gap: 10rem;
-    box-shadow: 0 2px;
-}
-
-.welcome__title{
-    padding-bottom: 1.5rem;
-}
-
-.welcome__img{
-    justify-self: right;
-    width: 100%;
-}
-
-@media only screen and (max-width: 1200px) {
-    .welcome{
-        padding-left: 5.625rem;
-        padding-right: 5.625rem;
-        height:calc(100vh - 5rem);
-        
-    }
-    
-    .welcome__container{
-        display: grid;
-        padding-top: 2rem;
-        grid-template-columns: repeat(2,1fr);
-        gap: 5rem;
-        
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .welcome{
-        padding-left: 5.625rem;
-        padding-right: 5.625rem;
-        height:calc(100vh - 5rem);
-        
-    }
-    
-    .welcome__container{
-        display: grid;
-        padding-top: 2rem;
-        grid-template-columns: repeat(1,1fr);
-        
-    }
 }

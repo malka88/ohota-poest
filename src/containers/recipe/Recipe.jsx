@@ -1,7 +1,7 @@
 import React from 'react';
-import './header.css';
+import './recipe.css';
 
-const Header = () => {
+const Recipe = () => {
   return (
     <div>
 
@@ -9,4 +9,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Recipe
