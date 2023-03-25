@@ -1,0 +1,104 @@
+<header class="header">
+  <nav class="nav container">
+    <div class="nav__data">
+      <a href="" class="nav__logo">
+        <i class="ri-cake-3-line"></i> Охота поесть
+      </a>
+      <div class="nav__toggle" id="nav-toggle" (click)="showMenu()">
+        <i class="ri-menu-line nav__toggle-menu"></i>
+        <i class="ri-close-line nav__toggle-close"></i>
+      </div>
+    </div>
+
+    <div class="nav__menu" id="nav-menu">
+      <ul class="nav__list">
+        <li class="dropdown__item" id="dropdown-item">
+          <div class="nav__link dropdown__button" (click)="toggleItem()">
+            Рецепты <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+          </div>
+          <div class="dropdown__container" id="dropdown-container">
+            <div class="dropdown__content">
+              <div class="dropdown__group">
+                <div class="dropdown__icon">
+                  <i class="ri-flashlight-line"></i>
+                </div>
+                <span class="dropdown__title">Рецепты</span>
+                <ul class="dropdown__list">
+                  <li>
+                    <a href="#" class="dropdown__link">Горячее</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown__link">Выпечка</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown__link">Десерты</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown__link">Салаты</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown__link">Супы</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown__link">Закуски</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="dropdown__group">
+                <div class="dropdown__icon">
+                  <i class="ri-flashlight-line"></i>
+                </div>
+                <span class="dropdown__title">Время приготовления</span>
+                <ul class="dropdown__list">
+                  <li>
+                    <a href="#" class="dropdown__link">10 минут или меньше</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown__link">30 минут или меньше</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown__link">30+ минут</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="dropdown__group">
+                <div class="dropdown__icon">
+                  <i class="ri-flashlight-line"></i>
+                </div>
+                <span class="dropdown__title">Способ приготовления</span>
+                <ul class="dropdown__list">
+                  <li>
+                    <a href="#" class="dropdown__link">Жарить</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown__link">Варить</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown__link">Тушить</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown__link">Выпекать</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown__link">Нарезать</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="#" class="nav__link">О сайте</a>
+        </li>
+        <li>
+          <form action="" class="search" id="search-bar">
+            <input type="search" placeholder="Поиск" class="search__input">
+            <div class="search__button" id="search-button">
+              <i class="ri-search-2-line search__icon"></i>
+            </div>
+          </form>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
